@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Photo Manager</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            <h2>Search Photos</h2>
+            <form id="search-form">
+                <input type="text" id="search-query" placeholder="Search by label..." required>
+                <button type="submit">Search</button>
+            </form>
+            <div id="search-results" class="results-grid"></div>
+        </section>
+        
+        <section id="upload-section">
+            <h2>Upload Photo</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="photo-file" accept="image/*" required>
+                <input type="text" id="custom-labels" placeholder="Custom labels (comma-separated)" required>
+                <button type="submit">Upload</button>
+            </form>
+            <div id="upload-status"></div>
+        </section>
+    </main>
+    <!-- Include the API Gateway SDK -->
+    <script src="sdk/apigClient.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

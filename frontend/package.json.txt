@@ -1,0 +1,16 @@
+{
+  "name": "photo-manager-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the photo manager application",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",  // For local development
+    "build": "echo 'No build step required for static files'"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.2" // Optional, if you use a dev server
+  },
+  "devDependencies": {}
+}
