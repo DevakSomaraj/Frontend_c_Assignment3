@@ -4,6 +4,7 @@ Resources:
     Type: AWS::S3::Bucket
     Properties:
       BucketName: my-photo-manager-frontend
+    DeletionPolicy: Retain
       WebsiteConfiguration:
         IndexDocument: index.html
         ErrorDocument: error.html
